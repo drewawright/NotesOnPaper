@@ -1,0 +1,185 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr);
+    grid-auto-rows: minmax(2em, auto);
+}
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(assets/musicBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;    
+}
+
+.header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: rgb(164,204,95);
+    height: auto;
+    margin-top: 0;
+    padding: 0 1em; 
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+
+.headertitle{
+    grid-column: 1/3;
+    margin-left: 1.5em;
+    letter-spacing: .3em;
+    color: #3c433e;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.header h3{
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.headercontent{
+    grid-column: 4/5;
+    align-self: center;
+    align-content: space-around;
+}
+
+.headercontent input{
+    padding: 5px;
+    outline: none;
+}
+
+.headercontent a{
+    text-decoration: none;
+    color: #3c433e;
+}
+
+.headercontent a:nth-of-type(2){
+    padding-left: 2em;
+}
+
+.navbar{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: #3C433E;
+}
+
+.navbar li{
+    list-style: none;
+    margin-left: -25%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar p{
+    display: block;
+    background-color: #a4cc5f;
+    color: #3C433E;
+    margin: 0;
+    padding: 10px;
+    text-decoration: underline;
+    letter-spacing: .2em;
+}
+
+.navbar a{
+    display: block;
+    background-color: #a4cc5f;
+    color: #3C433E;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    background-color: #708b41;
+}
+
+.headerlinks{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.headerlinks a:hover{
+    color: #f5f5f5;
+}
+
+.mainwindow{
+    grid-column: 2/5;
+    grid-row: 2/4;
+    margin: 2em;
+}
+
+.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    background-color: #a4cc5f;
+    padding: 20px;
+    margin: 10px 8%;
+    border-radius: 10px;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.caption {
+    display: block;
+    height: 2.5em;
+}
+
+.item a{
+    text-decoration: none;
+    color: #3c433e;
+}
+
+.sheetmusicwindow{
+    background-color: rgba(60,67,62, .95);
+    margin-right: 5%;
+    margin-left: 0;
+    padding: 10px 10px 30px 10px;
+}
+
+.sheetmusicwindow h3{
+    margin-left: 8%;
+    color: #FFEBCD;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.sheetmusicwindow img{
+    width: 125px;
+    margin: 5px;
+}
+
+.footer{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    background-color: #a4cc5f;
+    padding: .5em;
+    padding-right: 6em;
+    text-align: right;
+}
+
+.footer img{
+    width: 25px;
+    border-radius: 5px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #3C433E;
+    margin: 10px;
+}
+
+.footer a:hover{
+    color: #f5f5f5;
+}
